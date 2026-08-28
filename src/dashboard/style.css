@@ -1,0 +1,306 @@
+/*
+ * FABINTEL — Industrial Engineering Workstation
+ * Light / Neutral Industrial UI
+ */
+
+/* ── Reset & Base ─────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+section[data-testid="stSidebar"] {
+    background-color: #f7f8fa;
+    border-right: 1px solid #dde0e4;
+}
+
+section[data-testid="stSidebar"] .stMarkdown h1,
+section[data-testid="stSidebar"] .stMarkdown h2,
+section[data-testid="stSidebar"] .stMarkdown h3 {
+    font-family: 'Inter', sans-serif;
+    color: #2c3e50;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+section[data-testid="stSidebar"] .stMarkdown p,
+section[data-testid="stSidebar"] .stMarkdown li {
+    font-family: 'Inter', sans-serif;
+    color: #5a6a7a;
+    font-size: 0.85rem;
+}
+
+.main .block-container {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    max-width: 1400px;
+}
+
+/* ── Typography ───────────────────────────────────────── */
+.main h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a2332;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+}
+
+.main h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    letter-spacing: -0.01em;
+    border-bottom: 1px solid #e8eaed;
+    padding-bottom: 0.4rem;
+    margin-top: 1.5rem;
+}
+
+.main h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #34495e;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-top: 1.2rem;
+}
+
+.main p, .main li, .main label, .main span {
+    font-family: 'Inter', sans-serif;
+    color: #3d4f5f;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+/* ── Metric Cards ─────────────────────────────────────── */
+div[data-testid="stMetric"] {
+    background-color: #ffffff;
+    border: 1px solid #dde0e4;
+    border-radius: 4px;
+    padding: 0.8rem 1rem;
+}
+
+div[data-testid="stMetric"] label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #7f8c9b;
+}
+
+div[data-testid="stMetric"] [data-testid="stMetricValue"] {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a2332;
+}
+
+/* ── Tables ───────────────────────────────────────────── */
+.main table {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.82rem;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.main table th {
+    background-color: #f7f8fa;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    color: #5a6a7a;
+    border-bottom: 2px solid #dde0e4;
+    padding: 0.5rem 0.6rem;
+    text-align: left;
+}
+
+.main table td {
+    padding: 0.45rem 0.6rem;
+    border-bottom: 1px solid #eef0f2;
+    color: #3d4f5f;
+}
+
+.main table tr:hover td {
+    background-color: #f9fafb;
+}
+
+/* ── Tabs ─────────────────────────────────────────────── */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 0;
+    border-bottom: 1px solid #dde0e4;
+}
+
+.stTabs [data-baseweb="tab"] {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    color: #5a6a7a;
+    border-radius: 0;
+    border-bottom: 2px solid transparent;
+}
+
+.stTabs [aria-selected="true"] {
+    color: #2a6cb6;
+    border-bottom: 2px solid #2a6cb6;
+    background-color: transparent;
+}
+
+/* ── Buttons ──────────────────────────────────────────── */
+.stButton > button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.82rem;
+    border: 1px solid #c4cad2;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #2c3e50;
+    padding: 0.4rem 1rem;
+    transition: background-color 0.15s;
+}
+
+.stButton > button:hover {
+    background-color: #f0f2f5;
+    border-color: #a0a8b2;
+}
+
+.stButton > button[kind="primary"] {
+    background-color: #2a6cb6;
+    border-color: #2a6cb6;
+    color: #ffffff;
+}
+
+/* ── File Uploader ────────────────────────────────────── */
+section[data-testid="stFileUploader"] {
+    border: 1px dashed #c4cad2;
+    border-radius: 4px;
+    padding: 0.6rem;
+    background-color: #fafbfc;
+}
+
+/* ── Expander ─────────────────────────────────────────── */
+.streamlit-expanderHeader {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* ── Status Badges (custom HTML) ──────────────────────── */
+.fi-badge {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 2px;
+    line-height: 1.4;
+}
+.fi-badge-ready   { background-color: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
+.fi-badge-pass    { background-color: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
+.fi-badge-low     { background-color: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
+.fi-badge-review  { background-color: #fff8e1; color: #f57f17; border: 1px solid #ffecb3; }
+.fi-badge-medium  { background-color: #fff8e1; color: #f57f17; border: 1px solid #ffecb3; }
+.fi-badge-warning { background-color: #fff8e1; color: #f57f17; border: 1px solid #ffecb3; }
+.fi-badge-fail    { background-color: #ffebee; color: #c62828; border: 1px solid #ffcdd2; }
+.fi-badge-high    { background-color: #ffebee; color: #c62828; border: 1px solid #ffcdd2; }
+.fi-badge-error   { background-color: #ffebee; color: #c62828; border: 1px solid #ffcdd2; }
+.fi-badge-neutral { background-color: #f5f5f5; color: #616161; border: 1px solid #e0e0e0; }
+
+/* ── Info Panel ───────────────────────────────────────── */
+.fi-panel {
+    background-color: #ffffff;
+    border: 1px solid #dde0e4;
+    border-radius: 4px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.fi-panel-header {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #7f8c9b;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #eef0f2;
+    padding-bottom: 0.3rem;
+}
+
+.fi-kv-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    color: #7f8c9b;
+    margin-bottom: 0.1rem;
+}
+
+.fi-kv-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.92rem;
+    color: #1a2332;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+/* ── Monospace identifiers ────────────────────────────── */
+.fi-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+}
+
+/* ── Section Divider ──────────────────────────────────── */
+.fi-divider {
+    border-top: 1px solid #e8eaed;
+    margin: 1rem 0;
+}
+
+/* ── Disclaimer / Caution ─────────────────────────────── */
+.fi-caution {
+    background-color: #fffde7;
+    border: 1px solid #fff59d;
+    border-left: 3px solid #f9a825;
+    padding: 0.6rem 0.8rem;
+    border-radius: 2px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    color: #5d4037;
+    margin-top: 0.8rem;
+}
+
+/* ── Header bar ───────────────────────────────────────── */
+.fi-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0;
+    border-bottom: 2px solid #2a6cb6;
+    margin-bottom: 1.2rem;
+}
+
+.fi-header-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a2332;
+    letter-spacing: -0.01em;
+}
+
+.fi-header-sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    color: #7f8c9b;
+    letter-spacing: 0.02em;
+}
+
+/* ── Hide Streamlit chrome ────────────────────────────── */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header[data-testid="stHeader"] {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dde0e4;
+}

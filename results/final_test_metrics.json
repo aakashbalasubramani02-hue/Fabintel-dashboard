@@ -1,0 +1,10 @@
+{
+    "Accuracy": 0.9602850035836249,
+    "Balanced Accuracy": 0.6663310386370702,
+    "Macro Precision": 0.7340337498822164,
+    "Macro Recall": 0.6663310386370702,
+    "Macro F1": 0.692940091776205,
+    "Weighted Precision": 0.9596108153060763,
+    "Weighted Recall": 0.9602850035836249,
+    "Weighted F1": 0.9594569626044788
+}
