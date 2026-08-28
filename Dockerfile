@@ -1,5 +1,5 @@
-# Use a lightweight official Python image
-FROM python:3.11-slim
+# Use official Python 3.13 runtime as a parent image (matching local environment)
+FROM python:3.13-slim
 
 # Set the working directory
 WORKDIR /app
