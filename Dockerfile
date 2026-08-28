@@ -24,4 +24,9 @@ COPY . .
 EXPOSE 10000
 
 # Run Streamlit, binding to 0.0.0.0 and using Render's PORT environment variable
-CMD streamlit run src/dashboard/app.py --server.port="${PORT:-10000}" --server.address="0.0.0.0"
+# Added --server.fileWatcherType="none" to prevent "inotify limit" crashes on cloud deployments
+CMD streamlit run src/dashboard/app.py \
+    --server.port="${PORT:-10000}" \
+    --server.address="0.0.0.0" \
+    --server.fileWatcherType="none" \
+    --browser.gatherUsageStats=false
